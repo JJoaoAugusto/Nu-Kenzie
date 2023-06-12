@@ -17,7 +17,7 @@ export const ListSection = ({ data, setData }) => {
             <StyledParagraph>Resumo Financeiro</StyledParagraph>
             <ul>
                 {data.length > 0 ? (
-                    data.map(element => < ListCard key={element.id} data={element} removeContent={removeContent} />)
+                    data.map(element => < ListCard key={element.id} element={element} removeContent={removeContent} />)
                 ) : <p>Você ainda não possui nenhum lançamento </p>}
             </ul>
         </StyledListSection>

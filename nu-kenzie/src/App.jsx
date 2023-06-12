@@ -9,20 +9,7 @@ import { StyledMain } from "./styles/main"
 
 function App() {
 
-  const [data, setData] = useState([
-    {
-      description: 'Tipo Saída',
-      value: '100',
-      type: "Saída",
-      id: '412ba002-324f-4d5c-b6e5-24d4124f9853'
-    },
-    {
-      description: 'Tipo Entrada',
-      value: '100',
-      type: 'Entrada',
-      id: '412ba002-324f-4d5c-b6e5-24d4124f9824'
-    }
-  ])
+  const [data, setData] = useState([])
 
 
   return (

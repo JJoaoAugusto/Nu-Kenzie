@@ -23,7 +23,7 @@ export const FormSection = ({ data, setData }) => {
         addContent()
         setDescription("")
         setValue("")
-        setType("Entrada")
+        setType("")
     }
 
     return (
@@ -37,7 +37,8 @@ export const FormSection = ({ data, setData }) => {
                 <StyledSpan>Valor (R$)</StyledSpan>
                 <StyledImput required onChange={(e) => setValue(e.target.value)} type="number" value={value} placeholder="1" />
 
-                <StyledSelect onChange={(e) => { setType(e.target.value) }} value={type}>
+                <StyledSelect required onChange={(e) => setType(e.target.value)} value={type}>
+                    <option value="">Selecione o tipo</option>
                     <option value="Entrada">Entrada</option>
                     <option value="Saída">Saída</option>
                 </StyledSelect>

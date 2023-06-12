@@ -12,10 +12,6 @@ export const CountSection = ({ data }) => {
         else if (act.type === "Saída") {
             return Number(acc) - Number(act.value)
         }
-        else {
-            return Number(acc) - Number(act.value)
-        }
-
     }, 0)
 
 
